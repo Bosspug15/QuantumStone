@@ -4,19 +4,28 @@ using UnityEngine;
 
 public class QuantumBehavior : MonoBehaviour
 {
-    [SerializeField] private Transform quantumCube;
+    [SerializeField] private Collider quantumCube;
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("enter");
+        if (other == quantumCube)
+        {
+            Debug.Log("enter");
+        }
     }
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("stay");
+        if (other == quantumCube)
+        {
+            Debug.Log("stay");
+        }
     }
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("exit");
+        if (other == quantumCube)
+        {
+            Debug.Log("exit");
+        }
     }
 
 

@@ -123,68 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &185889175
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 185889176}
-  - component: {fileID: 185889178}
-  - component: {fileID: 185889177}
-  m_Layer: 6
-  m_Name: QuantumBlock
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &185889176
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185889175}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.06741, z: -0.125}
-  m_LocalScale: {x: 1.0408833, y: 1.209, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1103782356}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &185889177
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185889175}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 0.35505104, z: 0.33733344}
-  m_Center: {x: 0, y: 0.32247448, z: -0.33133328}
---- !u!33 &185889178
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185889175}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &512001627
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +445,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1103782356}
   m_Father: {fileID: 1061586403}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963194229
@@ -584,7 +523,6 @@ Transform:
   - {fileID: 1530931285}
   - {fileID: 963194228}
   - {fileID: 512001628}
-  - {fileID: 1103782356}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1061586404
@@ -619,6 +557,7 @@ GameObject:
   - component: {fileID: 1103782356}
   - component: {fileID: 1103782358}
   - component: {fileID: 1103782357}
+  - component: {fileID: 1103782359}
   m_Layer: 6
   m_Name: QuantumCheck
   m_TagString: Untagged
@@ -634,13 +573,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103782355}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0071819, y: 0.9744, z: 2.6059}
-  m_LocalScale: {x: 3.718222, y: 2.1672096, z: 4.631896}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0071819127, y: -0.6855999, z: 34.43}
+  m_LocalScale: {x: 5.4696913, y: 2.1672096, z: 67.52663}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 185889176}
-  m_Father: {fileID: 1061586403}
+  m_Children: []
+  m_Father: {fileID: 963194228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1103782357
 BoxCollider:
@@ -657,7 +595,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -671,6 +609,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103782355}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1103782359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103782355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d1e22234d279847867f59e2a143768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quantumCube: {fileID: 1243355053}
 --- !u!1 &1243355051
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +635,6 @@ GameObject:
   - component: {fileID: 1243355054}
   - component: {fileID: 1243355053}
   - component: {fileID: 1243355052}
-  - component: {fileID: 1243355057}
   m_Layer: 0
   m_Name: Quantum Cube
   m_TagString: Untagged
@@ -805,21 +755,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 861417406}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1243355057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1243355051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d1e22234d279847867f59e2a143768, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPOV: {fileID: 1103782356}
-  pos: {fileID: 185889176}
-  range: 10
 --- !u!1 &1530931284
 GameObject:
   m_ObjectHideFlags: 0
