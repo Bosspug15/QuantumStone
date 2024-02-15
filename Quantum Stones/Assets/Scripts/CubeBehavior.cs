@@ -31,7 +31,8 @@ public class CubeBehavior : MonoBehaviour
     {
         if (other == scanner)
         {
-            transform.RotateAround(center.position, Vector3.up, Random.Range(5f, 25f)); 
+
+            transform.RotateAround(center.position, Vector3.up, Random.Range(-35f, 35f)); 
         }
     }
   
